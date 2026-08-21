@@ -1,0 +1,24 @@
+[project]
+name = "caliper-engine"
+version = "0.1.0"
+description = "Zero-Trust Behavioral Code Verification Engine (ZTBVE)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "z3-solver>=4.13.0",
+    "tree-sitter>=0.21.0",
+    "duckdb>=0.10.0",
+    "pydantic>=2.6.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pytest>=8.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/kairosyash/caliper-engine"
+Documentation = "https://github.com/kairosyash/caliper-engine/blob/main/ARCHITECTURE.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
